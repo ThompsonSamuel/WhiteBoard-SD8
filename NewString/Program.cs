@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace NewString
+namespace ReverseString
 {
-    class Program
+    public class Program
     {
-        static string ReverseString( string inputSring)
+        public static string ReverseString( string inputSring)
         {
             string outputString = "";
             for (int i = inputSring.Length; i > 0;)
