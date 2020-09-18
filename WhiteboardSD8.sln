@@ -51,6 +51,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueStore", "ValueStore\Va
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vectors", "Vectors\Vectors\Vectors.csproj", "{F2058F21-9143-46DA-B5A6-A080CFE09E6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTree", "..\BinaryTree\BinaryTree\BinaryTree.csproj", "{45FB39D4-B423-4B36-97A2-AF3D2EC713BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{F2058F21-9143-46DA-B5A6-A080CFE09E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2058F21-9143-46DA-B5A6-A080CFE09E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2058F21-9143-46DA-B5A6-A080CFE09E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45FB39D4-B423-4B36-97A2-AF3D2EC713BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45FB39D4-B423-4B36-97A2-AF3D2EC713BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45FB39D4-B423-4B36-97A2-AF3D2EC713BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45FB39D4-B423-4B36-97A2-AF3D2EC713BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
