@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 
-namespace KeyValue
+namespace KeyValueStore
 {
     public struct KeyValue
     {
@@ -38,7 +38,7 @@ namespace KeyValue
                     return keyvalues[inputKey].value;
                 }
                 else
-                    throw new KeyNotFoundException("KeyNotFoundException");
+                    return new KeyNotFoundException("KeyNotFoundException");
             }
         }
     }
