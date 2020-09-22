@@ -38,7 +38,7 @@ namespace KeyValueStore
                     return keyvalues[inputKey].value;
                 }
                 else
-                    return new KeyNotFoundException("KeyNotFoundException");
+                    return new KeyNotFoundException();
             }
         }
     }
@@ -58,7 +58,7 @@ namespace KeyValueStore
             }
             d["Cats"] = 42;
             d["Dogs"] = 17;
-            Console.WriteLine($"{d["Cats"].ToString()}, {d["Dogs"].ToString()}");
+            Console.WriteLine($"{d["Cats"]}, {d["Dogs"]}");
         }
     }
 }
