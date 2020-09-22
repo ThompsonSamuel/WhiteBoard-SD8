@@ -68,8 +68,16 @@ namespace EncryptionAuthentication
             string Username = Console.ReadLine();
             Console.WriteLine("\tEnter your Password:");
             string Password = Console.ReadLine();
-            Console.WriteLine(users.ContainsKey(Username) && users[Username] == Encrypt.Hash(Password) ? $"\nAuthentication of {Username} Successful!" : "\nInvalid Username or Password");
-            return;
+
+            if (users.ContainsKey(Username))
+            {
+                if (users[Username] == Encrypt.Hash(Password))
+                    Console.WriteLine($"\nAuthentication of {Username} Successful!");
+                else
+                    Console.WriteLine($"\nIncorrect Password for {Username}");
+            }
+            else
+                Console.WriteLine("\nUsername does not exist");
         }
     }
 
