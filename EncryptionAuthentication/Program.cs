@@ -15,6 +15,7 @@ namespace EncryptionAuthentication
         }
         static void Menu(Dictionary<string, string> users)
         {
+            Console.Clear();
             Console.WriteLine("\nSelect an option(1/2/3)\n\t1:Enter New User\t2:Authenticate Existing User\t3.Exit Application");
             var newUser = Console.ReadKey(false);
             switch (newUser.Key)
@@ -36,7 +37,6 @@ namespace EncryptionAuthentication
                     Environment.Exit(0);
                     break;
                 default:
-                    Console.WriteLine("\nInvalid option");
                     Menu(users);
                     break;
             }
@@ -60,6 +60,9 @@ namespace EncryptionAuthentication
             else
             users.Add(Username, Encrypt.Hash(Password));
             Console.WriteLine($"Account Created\tUsername: {Username}\tPassword: {Password}\nEncoded Password {users[Username]}");
+
+            Console.Write("\nPress 'Enter' to return to the menu");
+            while (Console.ReadKey().Key != ConsoleKey.Enter) { }
             return users;
         }
         static void AuthenticateAccount(Dictionary<string, string> users)
@@ -78,6 +81,8 @@ namespace EncryptionAuthentication
             }
             else
                 Console.WriteLine("\nUsername does not exist");
+            Console.Write("\nPress 'Enter' to return to the menu");
+            while (Console.ReadKey().Key != ConsoleKey.Enter) { }
         }
     }
 
