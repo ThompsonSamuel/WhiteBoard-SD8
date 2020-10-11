@@ -57,7 +57,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptionAuthentication", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections", "Collections\Collections.csproj", "{BA24197D-FD24-44FB-B6B1-EDC8A6557216}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathGames", "MathGames\MathGames.csproj", "{383DBD4F-3337-4134-905D-D6F9D36D4AAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathGames", "MathGames\MathGames.csproj", "{383DBD4F-3337-4134-905D-D6F9D36D4AAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptAndDecrypt", "EncryptAndDecrypt\EncryptAndDecrypt.csproj", "{5FF5BA4A-154E-4846-ADDB-EBE8A4BE10D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviewDelegates", "ReviewDelegates\ReviewDelegates.csproj", "{96D39F99-2206-4B03-8011-FBBD75B7438B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +181,14 @@ Global
 		{383DBD4F-3337-4134-905D-D6F9D36D4AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{383DBD4F-3337-4134-905D-D6F9D36D4AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{383DBD4F-3337-4134-905D-D6F9D36D4AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF5BA4A-154E-4846-ADDB-EBE8A4BE10D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF5BA4A-154E-4846-ADDB-EBE8A4BE10D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF5BA4A-154E-4846-ADDB-EBE8A4BE10D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF5BA4A-154E-4846-ADDB-EBE8A4BE10D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D39F99-2206-4B03-8011-FBBD75B7438B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D39F99-2206-4B03-8011-FBBD75B7438B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D39F99-2206-4B03-8011-FBBD75B7438B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D39F99-2206-4B03-8011-FBBD75B7438B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

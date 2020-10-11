@@ -1,17 +1,39 @@
 ﻿using System;
-using Geometry;
+using System.Collections;
+using System.Linq;
 
-
-namespace WhiteboardSD8
+namespace WhiteboardSD8 
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("WhiteboardSD8.prgogram.main()");
+	class Program
+	{
+		static void Main(string[] args)
+		{
+            Console.WriteLine(Alphabetical("sdfuhiuwe ASFHIuaf sfohWOVvvIHasiD"));
+		}
 
-            double b = 3.0, h = 1.0;
-            Console.WriteLine($"Area of a triangle with base:{b} and height:{h} = {Triangle.areaOfTriangle(b,h)}");
-        }
-    }
+		static string Alphabetical(string input)
+		{
+			input = String.Concat(input.Where(x => !char.IsWhiteSpace(x)));
+			input = input.ToLower();
+			char[] inputA = input.ToCharArray();
+			for (int i = 0; i < inputA.Length - 2; i++)
+			{
+				for (int a = 0; a < inputA.Length - 2; a++)
+				{
+					if (inputA[a] > inputA[a + 1])
+					{
+						char temp = inputA[a];
+						inputA[a] = inputA[a + 1];
+						inputA[a + 1] = temp;
+					}
+				}
+			}
+			string result = "";
+			foreach(char i in inputA)
+            {
+				result += i;
+            }
+			return result;
+		}
+	}
 }
