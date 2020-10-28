@@ -18,7 +18,15 @@ namespace IsPrimeTest
         [TestMethod]
         public void isPrimeTest3()
         {
-            Assert.IsTrue (Primes.PrimeNumber.IsPrime(3));
+            Assert.IsTrue (Primes.PrimeNumber.IsPrime(7919));
+        }
+        [TestMethod]
+        public void isPrimeTest4() {
+            Assert.IsTrue(Primes.PrimeNumber.IsPrime(337));
+        }
+        [TestMethod]
+        public void isPrimeTest5() {
+            Assert.IsTrue(Primes.PrimeNumber.IsPrime(2));
         }
     }
 }
